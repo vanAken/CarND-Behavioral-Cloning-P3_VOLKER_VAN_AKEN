@@ -1,0 +1,87 @@
+(CarND-Behavioral-Cloning-P3) volker@volker-HP-EliteBook-8570w:~/SDC/CarND-Behavioral-Cloning-P3$ python3 model.py 
+/home/volker/anaconda3/envs/CarND-Behavioral-Cloning-P3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+./data1/   samples: 4801
+./data2/   samples: 460
+./data3/   samples: 4820
+./data4/   samples: 995
+./UDACity_data/   samples: 8036
+./data_M/   samples: 18620
+./data_MS/   samples: 1835
+./data_MB/   samples: 2984
+42551 samples results in  255306  images.
+GLib-GIO-Message: 20:33:18.152: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+model.py:54: MatplotlibDeprecationWarning: scipy.stats.norm.pdf
+  gauss = mlab.normpdf( bins, mu, sigma)
+(None, 160, 320, 3)
+(None, 100, 320, 3)
+2018-05-18 20:33:49.033616: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+2018-05-18 20:33:49.087299: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-18 20:33:49.087599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Quadro K1000M major: 3 minor: 0 memoryClockRate(GHz): 0.8505
+pciBusID: 0000:01:00.0
+totalMemory: 1,95GiB freeMemory: 1,50GiB
+2018-05-18 20:33:49.087621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-05-18 20:33:49.347284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-18 20:33:49.347334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2018-05-18 20:33:49.347344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2018-05-18 20:33:49.347484: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1276 MB memory) -> physical GPU (device: 0, name: Quadro K1000M, pci bus id: 0000:01:00.0, compute capability: 3.0)
+(None, 32, 106, 24)
+(None, 14, 51, 32)
+(None, 5, 24, 48)
+(None, 3, 22, 64)
+(None, 1, 20, 64)
+(None, 1280)
+Epoch 1/25
+1064/1063 [==============================] - 1516s 1s/step - loss: 0.6103 - val_loss: 0.2154
+Epoch 2/25
+1064/1063 [==============================] - 1511s 1s/step - loss: 0.2212 - val_loss: 0.1736
+Epoch 3/25
+1064/1063 [==============================] - 1496s 1s/step - loss: 0.1896 - val_loss: 0.1598
+Epoch 4/25
+1064/1063 [==============================] - 1509s 1s/step - loss: 0.1731 - val_loss: 0.1443
+Epoch 5/25
+1064/1063 [==============================] - 1498s 1s/step - loss: 0.1577 - val_loss: 0.1310
+Epoch 6/25
+1064/1063 [==============================] - 1502s 1s/step - loss: 0.1450 - val_loss: 0.1221
+Epoch 7/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1362 - val_loss: 0.1162
+Epoch 8/25
+1064/1063 [==============================] - 1508s 1s/step - loss: 0.1319 - val_loss: 0.1162
+Epoch 9/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1305 - val_loss: 0.1145
+Epoch 10/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1311 - val_loss: 0.1177
+Epoch 11/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1300 - val_loss: 0.1141
+Epoch 12/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1300 - val_loss: 0.1155
+Epoch 13/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1297 - val_loss: 0.1166
+Epoch 14/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1291 - val_loss: 0.1145
+Epoch 15/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1290 - val_loss: 0.1151
+Epoch 16/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1285 - val_loss: 0.1158
+Epoch 17/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1289 - val_loss: 0.1184
+Epoch 18/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1289 - val_loss: 0.1123
+Epoch 19/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1283 - val_loss: 0.1133
+Epoch 20/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1276 - val_loss: 0.1131
+Epoch 21/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1275 - val_loss: 0.1103
+Epoch 22/25
+1064/1063 [==============================] - 1508s 1s/step - loss: 0.1279 - val_loss: 0.1108
+Epoch 23/25
+1064/1063 [==============================] - 1508s 1s/step - loss: 0.1276 - val_loss: 0.1133
+Epoch 24/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1275 - val_loss: 0.1136
+Epoch 25/25
+1064/1063 [==============================] - 1507s 1s/step - loss: 0.1275 - val_loss: 0.1108
+model saved
+
