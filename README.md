@@ -20,9 +20,9 @@ Is the car possible to drive backwards the challenge track? - This is also a hin
 
 One open question was: "Is that model general?"
 
-So i try a new track wich has nerver been traind before - the old mountain track.
+So i try a new track, which has nerver been trained before - the old mountain track.
 
-The result you can see here mountain.mp4.
+The result you can see here: mountain.mp4.
 
 
 
